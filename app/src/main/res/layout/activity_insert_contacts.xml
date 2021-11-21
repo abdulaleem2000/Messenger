@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:background="#030303">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            android:text="Add Contacts"
+            android:textColor="#aaaaaa"
+            android:textSize="30dp"></TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cam"
+            app:civ_border_color="#1f1f1f"
+            app:civ_border_width="10dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingAddConBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/photoAdd"
+            android:layout_marginLeft="230dp"
+
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/addNameCon"
+            android:layout_width="308dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#AAA9A9"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPassword"
+            android:textColorHint="#AAA9A9" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editTextnumberCon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#AAA9A9"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColorHint="#AAA9A9"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="225dp"
+
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#193155"
+
+            android:text="Add"></Button>
+    </LinearLayout>
+</LinearLayout>

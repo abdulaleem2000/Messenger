@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsFragment"
+    android:background="#1f1f1f">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/newContact">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_perm_contact_calendar_24"
+                android:id="@+id/cont"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/cont"
+                android:text="New Contact"
+                android:textColor="#FFFF"
+                android:textSize="20dp"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="20dp"
+            android:id="@+id/newGroup">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_perm_contact_calendar_24"
+                android:id="@+id/group"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/group"
+                android:text="Create Group"
+                android:textColor="#FFFF"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequently Contacted"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recCon"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</FrameLayout>
